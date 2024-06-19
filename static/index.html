@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Friendly Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="brand"><a href="/">GraceFitProducts</a></div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="products">Products</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a id="login" href="/login">Login</a></li>
+            </ul>
+        </nav>
+    <div id="hamburger-icon" onclick="mobileView(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+         <ul class="mobile-menu" style="color: white;">
+                <li><a href="/home">Home</a></li>
+                <li><a href="products">Products</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a id="login" href="/login">Login</a></li>
+         </ul>
+    </div>
+    </header>
+    <div class="bg-img"></div>
+    
+   <script>
+    function mobileView(menu){
+        menu.classList.toggle('open');
+    }
+   </script>
+</body>
+</html>
